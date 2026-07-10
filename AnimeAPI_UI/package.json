@@ -1,0 +1,8 @@
+{
+  "name": "anime-tea",
+  "version": "1.0.0",
+  "description": "Anime Tea - a pure static frontend for the Anime Review API",
+  "scripts": {
+    "build": "node -e \"const fs=require('fs');['index.html','style.css','script.js'].forEach(f=>{if(!fs.existsSync(f))throw new Error('Missing: '+f)});require('child_process').execSync('node --check script.js',{stdio:'inherit'});console.log('Build OK: all static files present and valid.');\""
+  }
+}

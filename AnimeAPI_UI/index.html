@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anime Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Anime Tea</h1>
+        <p class="site-tagline">Sip through curated anime, one cup at a time.</p>
+
+        <form id="search-form" class="search-bar" autocomplete="off">
+            <input
+                type="text"
+                id="search-input"
+                class="search-input"
+                placeholder="Search for an anime..."
+                aria-label="Search for an anime"
+            />
+            <button type="submit" class="search-btn" aria-label="Search">Search</button>
+        </form>
+    </header>
+
+    <main class="main-content">
+        <div id="status" class="status" hidden></div>
+        <div id="anime-grid" class="anime-grid"></div>
+    </main>
+
+    <div id="modal" class="modal" hidden>
+        <div class="modal-backdrop" id="modal-backdrop"></div>
+        <article class="modal-card" id="modal-card"></article>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
